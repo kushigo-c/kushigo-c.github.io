@@ -8,32 +8,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/js/navigation.js"></script>
 </head>
 <body>
+    <header id="header" class="DownMove">
+        <h1>kushigo_c</h1>
+        <nav>
+            <ul class="g-navi">
+                <li class="current"><a href="#">about</a></li>
+                <li><a href="#">works</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <div id="profile">
+        <section id="profile">
             <img src="pictures/kushigo_icon.png" alt="kushigo_c's icon"></img>
             <div><h1>kushigo</h1>
             <p>@kushigo_c</p></div>
-        </div>
-        <h2>about</h2>
-        <p>何かを作ることが好きな人。クリエイター界隈をうろついてます。</p>
-        <ul>
-            <li>
-                <p>好きなプログラミング言語</p>
-                <p>Python,C#,C++,Rust</p>
-            </li>
-            <div class="border"></div>
-        </ul>
-        <h2>achievements</h2>
-        <ul>
-            <li>
-                <p>AtCoder Rating</p>
-                <p>150</p>
-            </li>
-            <div class="border"></div>
-        </ul>
+        </section>
+        <section id="about" class="navfade">
+            <h2>about</h2>
+            <p>何かを作ることが好きな人。クリエイター界隈をうろついてます。</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>好きなプログラミング言語</th>
+                        <td>Python,C++,C#,Rust</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="achievements">
+            <h2>achievements</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>AtCoder Rating</th>
+                        <td>150</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 </body>
 </html>

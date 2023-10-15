@@ -1,0 +1,35 @@
+/*プロフィールの設定*/
+#profile {
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+#profile img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+#profile h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#profile p {
+    font-size: 24px;
+}
+
+@media screen and (min-width: 780px) {
+    #profile {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: 50px;
+    }
+
+    #profile img {
+        width: 300px;
+        border-radius: 50%;
+
+    }
+}
