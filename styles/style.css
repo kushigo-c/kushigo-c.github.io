@@ -1,0 +1,55 @@
+/*基本設定*/
+*{
+    background-color: #E4F1EE;
+    color: #2B413C;
+    font-family: "Inter",sans-serif;
+    font-weight: normal;
+}
+body{
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+}
+p{
+    font-size: 18px;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+}
+
+/*プロフィールの設定*/
+#profile{
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+#profile img{
+    width: 50%;
+    border-radius: 50%;
+}
+#profile h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+#profile p{
+    font-size: 24px;
+}
+@media screen and (min-width: 780px){
+    #profile{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: 50px;
+    }
+    #profile img{
+        width: 300px;
+        border-radius: 50%;
+        
+    }
+}
