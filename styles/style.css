@@ -9,6 +9,7 @@ body{
     text-align: center;
 }
 h2{
+    margin-top: 200px;
     font-size: 40px;
 }
 p{
@@ -16,17 +17,24 @@ p{
 }
 ul{
     list-style: none;
+    padding: 0;
 }
 ul li{
     display: flex;
     justify-content: center;
     gap: 30%;
 }
+.border{
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    border-bottom:2px solid #2B413C;
+}
 
 /*プロフィールの設定*/
 #profile{
-    margin-top: 200px;
-    margin-bottom: 300px;
+    margin-top: 25%;
+    margin-bottom: 25%;
 }
 #profile img{
     width: 50%;
