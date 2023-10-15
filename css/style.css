@@ -6,6 +6,42 @@
     font-weight: normal;
 }
 
+/*ふわっと動かす*/
+.fadeUpTrigger{
+    opacity: 0;
+}
+.fadeUp{
+    -webkit-animation-name: fadeUpAnime;
+    animation-name: fadeUpAnime;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@-webkit-keyframes fadeUpAnime {
+    from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
+
+@keyframes fadeUpAnime {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 main {
     text-align: center;
 }
