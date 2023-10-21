@@ -25,6 +25,7 @@ header h1 {
 
 nav ul {
     display: inline-block;
+    margin: 0;
     margin-left: 100px;
     display: flex;
     justify-self: center;
@@ -39,6 +40,7 @@ nav ul li a {
     padding: 10px;
     background-color: #fff;
 }
+
 
 /*　上に上がる動き　*/
 
