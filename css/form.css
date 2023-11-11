@@ -1,0 +1,37 @@
+h2{
+    margin-top:50px;
+}
+
+input[type="text"]{
+    padding: 10px;
+    font-size: 20px;
+    width: 30%;
+    height:40px;
+    border-radius: 10px;
+    border: 2px solid #2B413C;
+}
+textarea{
+    padding: 10px;
+    font-size: 20px;
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #2B413C;
+}
+button[type="submit"]{
+    border-radius: 10px;
+    border: 2px solid #2B413C;
+    margin-top: 50px;
+    font-size: 30px;
+    width: 20%;
+}
+button[type="submit"]:hover,
+input[type="radio"]:hover,
+label:hover{
+    cursor: pointer;
+}
+.radio div{
+    margin-left:30%;
+    font-size: 20px;
+    text-align: left;
+}

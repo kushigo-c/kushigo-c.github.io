@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQERV6JJ3Q"></script>
+		<script>
+  				window.dataLayer = window.dataLayer || [];
+  				function gtag(){dataLayer.push(arguments);}
+  				gtag('js', new Date());
+  				gtag('config', 'G-QQERV6JJ3Q');
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>kushigo_c</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/profile.css" />
+		<link rel="stylesheet" href="/css/navigation.css" />
+		<link rel="stylesheet" href="/css/form.css"/>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<script src="/js/navigation.js"></script>
+		<script src="/js/fadeup.js"></script>
+	</head>
+	<body>
+		<header id="header" class="DownMove">
+			<h1>kushigo_c</h1>
+			<nav>
+				<ul class="g-navi">
+					<li><a href="/index.html">about</a></li>
+					<li><a href="/works/">works</a></li>
+					<li><a href="#">blog</a></li>
+					<li class="current"><a href="/contact/">contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="profile">
+				<div>
+					<h1 class="navfade">contact</h1>
+					<p>何か聞きたいことがあればこちらまで。</p>
+				</div>
+			</section>
+			<section id="contact" class="fadeUpTrigger">
+				<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdhZAro5mYswaIHWNrlP71krUHDI9z5hMO0LJLElvn4kZ6Kfg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+					<div>
+						<h2>お名前</h2>
+						<p>質問者が誰かわかるならよいです。（SNSの名前も可）</p>
+						<input type="text" name="entry.1400024654" required/>
+					</div>
+					<div>
+						<h2>返信方法</h2>
+						<div class="radio">
+							<div>
+								<input type="radio" id="mail" name="entry.1275436693" value="メール" required/>
+								<label for="mail">メール</label>
+							</div>
+							<div>
+								<input type="radio" id="SNS"name="entry.1275436693" value="Twitter(X)のDM (@kushigo_cからのDMを受け取れるようにしてください)" required/>
+								<label for="SNS">Twitter(X)のDM (@kushigo_cからのDMを受け取れるようにしてください)</label>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h2>返信先</h2>
+						<p>返信に利用できるメールアドレスもしくはTwitter(X)のID(＠からはじまるもの)を入力してください。その他の回答をした場合は無視するのでご了承ください。</p>
+						<input type="text" name="entry.1939564243" required/>
+					</div>
+					<div>
+						<h2>SNSでの公開について</h2>
+						<p>内容によってSNS等で公開することがあります。（面白い質問や他の人にも関わることなど）許可しないと答えた場合は公開しません。</p>
+						<div class="radio">
+							<div>
+								<input type="radio" id="yes" name="entry.879253658" value="SNS等でお問い合わせ内容を公開することを許可する" required/>
+								<label for="yes">SNS等でお問い合わせ内容を公開することを許可する</label>
+							</div>
+							<div>
+								<input type="radio" id="no" name="entry.879253658" value="SNS等で公開することを許可しない" required/>
+							<label for="no">SNS等で公開することを許可しない</label>
+						</div>
+					</div>
+					</div>
+					<div>
+						<h2>ご用件</h2>
+						<p>聞きたいことをご自由に書いてください。</p>
+						<textarea name="entry.948272406" required></textarea>
+					</div>
+					<button type="submit">送信</button>
+				</form>
+				<script>
+    				let submitted = false;
+
+    				const page_transition = function () {
+        				if(submitted){
+            				window.location = 'thanks.html';
+        				}
+    				}
+				</script>
+				<iframe name="hidden_iframe" style="display:none;" onload="page_transition()"></iframe>
+			</section>
+		</main>
+        <footer>
+			<section>
+				<h2>navigation</h2>
+				<ul>
+					<li><a href="/index.html">about</a></li>
+					<li><a href="/works/">works</a></li>
+					<li><a href="#">blog</a></li>
+					<li><a href="/contact/">contact</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>SNS</h2>
+				<ul>
+					<li><a title="Twitter" href="https://twitter.com/kushigo_c" target="_blank"
+							><i class="fa-brands fa-twitter" style="color: #2b413c"></i
+						> Twitter</a></li>
+					<li><a title="GitHub" href="https://github.com/kushigo-c" target="_blank"
+							><i class="fa-brands fa-github"></i
+						> GitHub</a></li>
+					<li><a title="AtCoder" href="https://atcoder.jp/users/kushigo" target="_blank"
+							><i class="fa-solid fa-code"></i
+						> AtCoder</a></li>
+					<li><a title="Zenn" href="https://zenn.dev/kushigo_c" target="_blank"
+							><i class="fa-regular fa-note-sticky"></i></i
+						> Zenn</a></li>
+
+				</ul>
+			</section>
+		</footer>
+	</body>
+</html>
